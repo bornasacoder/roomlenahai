@@ -217,6 +217,7 @@ ul{
     }
      .main-nav ul.menu li{
         padding:15px 15px;
+        border-bottom: 1px solid lightgrey;
      
     }
     .main-nav ul.menu a{
