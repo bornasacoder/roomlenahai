@@ -1,0 +1,146 @@
+
+
+
+.showcase .showcase-img{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    ), url(css../../../images/about-1.jpg) 
+     center/cover no-repeat ;
+    
+   
+}
+
+.about-descp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:3rem;
+    margin:4rem;
+}
+
+.about-descp .about-descp-content{
+    display:flex;
+    flex-flow: column;
+    gap:2rem;
+}
+.about-descp .about-descp-content #head{
+    font-size:35px;
+   
+}
+.about-descp .about-descp-content span{
+    color:blueviolet;
+}
+.about-descp img{
+    width:100%;
+    object-fit: cover;
+    max-height:500px;
+}
+
+.policy{
+    display:flex;
+    flex-flow:column;
+    gap:3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 234, 234);
+    padding:3rem 1rem;
+}
+.policy .policy-content h2{
+      font-size:34px;
+      margin-bottom: 1rem;
+}
+.policy .policy-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background-color: rgb(246, 234, 234);
+}
+.policy .policy-box  .policy-box-1{
+      background-color:#fff;
+      height:450px;
+      width:25%;
+     padding:1rem;
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+     gap:2rem;
+     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+     border-radius:.5rem;
+     opacity: .9;
+    }
+.policy .policy-box  .policy-box-1 p{
+    text-align:justify;
+    line-height:1.8;
+}
+.policy .policy-box  .policy-box-1 img{
+    width:100px;
+    height:150px;
+
+}
+.info-1{
+    background:url('css../../../images/about-9.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+   
+    height:350px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items:center;
+    justify-items: center;
+   padding:0 100px;
+   
+}
+.info-1 .box-2{
+    background-color:rgba(245, 230, 230, 0.74);
+    height:150px;
+    width:270px;
+    display: grid;
+   align-content: center;
+   justify-items: center;
+    
+}
+.info-1 .box-2 .num{
+    font-size:40px;
+    color:rgba(112, 112, 185, 0.65);
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
+@media(max-width:800px){
+.about-descp{
+    grid-template-columns: 1fr;
+    margin:3rem 1rem;
+}
+.showcase .showcase-img{
+    font-size:23px;
+}
+.about-descp .about-descp-content #head{
+    font-size:25px;
+    text-align:center;
+}
+.about-descp a{
+    width:30%;
+}
+.policy .policy-box{
+    flex-flow: column;
+}
+.policy .policy-box  .policy-box-1{
+    width:95%;
+}
+.info-1{
+    grid-template-columns: 1fr;
+    height:800px;
+    justify-content: center;
+    padding:50px 0;
+}
+.info-1 .box-2{
+    width:350px;
+    
+}
+
+}

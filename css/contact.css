@@ -1,0 +1,110 @@
+
+
+/*showcase*/
+
+
+/*logo*/
+.showcase #logo{
+    width:60px ;
+    height:60px;
+    border-radius:50%;
+ }
+
+/*main-nav*/
+ 
+   
+/*main-nav*/
+.showcase .main-nav{
+    display:flex;
+    justify-content: space-between;
+    padding:0 100px;
+    padding-top:15px ;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.89) ;
+   
+
+}
+
+
+.showcase .showcase-img{
+    background:
+     url(css../../../images/contact-img-1.jpg) 
+     center/cover no-repeat;
+    
+    
+   
+}
+
+
+.about{
+    display:flex;
+    flex-flow: column;
+   gap:2rem;
+    text-align: center;
+    margin-top:4rem
+}
+.about #head{
+    font-size:35px;
+    margin-bottom:2rem;
+}
+.about-descp{
+   display:flex;
+ 
+   justify-content: space-between;
+   
+    margin:2rem 4rem;
+    align-items:center;
+}
+.about-descp a:hover{
+    opacity:.6;
+}
+
+
+.about-descp .about-descp-content{
+    display:flex;
+    flex-flow: column;
+    gap:2rem;
+    position:relative;
+    top:-4rem;
+}
+
+.about-descp .about-descp-content .content{
+    display:flex;
+    align-items: center;
+    gap:3rem;
+    color: rgba(0,0,0,.8);
+}
+.about-descp .about-descp-content .content span{
+    font-size:1.5rem;
+}
+.about span{
+    color:blueviolet;
+}
+.about-descp img{
+    width:100%;
+    object-fit: cover;
+    max-height:500px;
+}
+
+@media(max-width:800px){
+   
+   
+    .about-descp{
+       flex-flow:column;
+        margin:3rem 1rem;
+    }
+    .showcase .showcase-img{
+        font-size:23px;
+    }
+    .about #head{
+        font-size:25px;
+      
+    }
+    .about-descp .about-descp-content .content span{
+          font-size:18px;
+    }
+    .about-descp a{
+        width:30%;
+    }
+   
+}

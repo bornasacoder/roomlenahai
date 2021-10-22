@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root{
+    --nero : #252525;
+    --dimgray: #666;
+    --max-red :#d62828;
+    --snow : #fafafa;
+    --libre : 'libre franklin','sans-sarif' ;
+    --kaushan : 'kaushan script';
+    --transition: all 0.4s ease;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    transition:.5s;
+    border: none;
+    outline: none;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html{
+    font-size:98%;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*showcase*/
+
+
+/*logo*/
+.showcase #logo{
+    width:60px ;
+    height:60px;
+    border-radius:50%;
+ }
+
+
+/*main-nav*/
+.showcase .main-nav{
+    display:flex;
+    justify-content: space-between;
+    padding:0 100px;
+    padding-top:15px ;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.89) ;
+   
+
+}
+
+/*menu-btn*/
+#menu-btn{
+    position: absolute;
+    right:15px;
+   top:13px;
+   display:none;
+   z-index: 100;
+}
+
+.showcase .main-nav ul{
+    display:flex;
+    align-items: center;
+
+}
+.showcase .main-nav  ul li{
+    margin-right:25px;
+}
+.showcase .main-nav  a{
+    display: inline-block;
+    color:rgba(0, 0, 0, 0.712);
+    font-size:15px;
+   
+}
+
+.showcase .main-nav  a:hover{
+    color:rgb(149, 80, 214);
+}
+
+.showcase .showcase-img{
+    
+    
+    height:400px;
+    margin-top:.5rem;
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#fff;
+    font-size:20px;
+    
+   
+}
+.showcase .showcase-img .showcase-content{
+    font-family: kaushan script;
+    word-spacing: 8px;
+    font-size:40px;
+}
+.term{
+    display:flex;
+    gap:2rem;
+    justify-content: flex-end;
+    background-color: #333;
+    color:rgba(255, 255, 255, 0.692);
+   padding:0 7rem 2rem 2rem;
+
+}
+.term a{
+    display:block;
+    color:rgba(255, 255, 255, 0.692);   
+}
+.footer{
+    display:flex;
+    justify-content:space-between;
+    padding:2rem 3rem;
+    background-color: #333;
+    color:rgba(255, 255, 255, 0.692);
+}
+.footer .footer-head{
+    font-size:1.3rem;
+    color:rgba(255,255,255,.9);
+}
+.footer .social-icons  {
+    display:flex;
+    flex-flow: column;
+    gap:1rem;
+}
+.footer .social-icons a{
+    display:block;
+    color:rgba(255,255,255,.692);
+}
+.footer .social-icons a:hover{
+   opacity:.6;
+}
+.footer .social-icons .footer-head{
+    margin-bottom: 1rem;
+}
+.footer .social-icons-box-a{
+    display:flex;
+    gap:3rem;
+}
+.footer .social-icons-box-b{
+    display:flex;
+    gap:2.7rem;
+}
+.footer .footer-content{
+    display:flex;
+    flex-flow: column;
+    gap:1rem;
+
+}
+.footer .footer-content a{
+    color:rgba(255,255,255,.692);
+    display:block;
+}
+.aro{
+    position:fixed;
+    right:3%;
+    top:80%;
+}
+#aro-button{
+    font-size:1.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding:0px 10px 2px;
+    color:#fff;
+}
+#aro-button:hover{
+    opacity: .7;
+}
+.whatsapp{
+    position:fixed;
+    left:3%;
+    top:90%;
+}
+.whatsapp h5{
+    color:white;
+    background-color: #20b20f;
+    padding:12px;
+    border-radius: 10px;
+}
+
+
+@media(max-width:800px){
+   
+    #menu-btn{
+        display:block;
+        
+    }
+    #menu-btn:hover{
+        cursor: pointer;
+        opacity: .5;
+    }
+    .showcase #logo{
+        width:50px ;
+        height:50px;
+        border-radius:50%;
+     }
+    .main-nav ul.menu{
+        display:block;
+        position:absolute;
+        left:0;
+        top:100%;
+        background-color:rgba(255, 255, 255, 0.89) ;
+        width:100%;
+        z-index:10000;
+        border-top:1px solid rgb(216, 214, 214);
+       transition: transform .7s ;
+       transform: translateX(-700px);
+    }
+     .main-nav ul.menu li{
+        padding:10px 15px;
+     
+    }
+    .main-nav ul.menu a{
+        color:black;
+        opacity:.7;
+        display: inline-block;
+        font-size:15px;
+       
+    }
+    
+    .showcase .main-nav ul.menu.show{
+        transform:translateX(0px);
+    
+    }
+    
+    .showcase .main-nav{
+        position: relative;
+        background-color:rgba(255, 255, 255, 0.89) ;
+     padding:8px 15px;
+     
+     
+    }
+    .showcase .showcase-img .showcase-content{
+        font-size: 30px;
+    }
+    .footer{
+        flex-flow: column;
+        gap:2rem;
+        padding:2rem;
+    }
+    .aro{
+        top:83%;
+        right:5%;
+        
+    }
+    .term{
+        display:flex;
+        flex-flow: column;
+        gap:1rem;
+        padding-bottom:6rem;
+    }
+}
+
+
