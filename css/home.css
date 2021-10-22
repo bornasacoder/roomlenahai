@@ -448,14 +448,15 @@ ul{
        transform: translateX(-700px);
     }
      .main-nav ul.menu li{
-        padding:10px 15px;
+        padding:15px 15px;
+         border-bottom: 1px solid lightgrey;
      
     }
     .main-nav ul.menu a{
         color:black;
         opacity:.8;
-        display: inline-block;
-        font-size:15px;
+        display: block;
+        font-size:17px;
         
     }
     
