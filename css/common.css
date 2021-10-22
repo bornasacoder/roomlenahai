@@ -75,6 +75,7 @@ ul{
     display: inline-block;
     color:rgba(0, 0, 0, 0.712);
     font-size:15px;
+    font-weight:600;
    
 }
 
@@ -223,6 +224,7 @@ ul{
         opacity:.7;
         display: inline-block;
         font-size:15px;
+        font-weight: normal;
        
     }
     
