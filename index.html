@@ -65,7 +65,7 @@
         <button  id="submit-btn-2">submit</button>
     </form>
     <div id="owner-form-1" style="display:none;">
-        <form class="form" id="form-submit-1" method="POST" netlify-honeypot="bot-field" data-netlify="true" name="RENTER">
+        <form class="form" id="form-submit-1" method="POST" netlify-honeypot="bot-field" data-netlify="true" name="OWNER">
             <input type="hidden" name="form-name" value="RENTER">
             <p class="hidden">
                 <label></label> 
@@ -103,7 +103,7 @@
      </div>
      
      <div id="renter-form-1" style="display:none;">
-        <form class="form" id="form-submit-2" method="POST" style="height:500px;" netlify-honeypot="bot-field" data-netlify="true" name="OWNER">
+        <form class="form" id="form-submit-2" method="POST" style="height:500px;" netlify-honeypot="bot-field" data-netlify="true" name="RENTER">
             <input type="hidden" name="form-name" value="OWNER">
                     <p class="hidden">
                         <label></label> 
@@ -121,18 +121,18 @@
        
       </select>
       <div class="common">
-        <label>1-BHK<input type="checkbox" class="checkbox" name="Yes" name="1-BHK"></label>
-        <label>2-BHK<input type="checkbox" class="checkbox" name="Yes" name="2-BHK"></label>
-        <label>3-BHK<input type="checkbox" class="checkbox" name="Yes" name="3-BHK"></label> 
+        <label>1-BHK<input type="checkbox" class="checkbox" value="Yes" name="1-BHK"></label>
+        <label>2-BHK<input type="checkbox" class="checkbox" value="Yes" name="2-BHK"></label>
+        <label>3-BHK<input type="checkbox" class="checkbox" value="Yes" name="3-BHK"></label> 
       </div>
         <div  class="common">
-      <label>SINGAL<input type="checkbox" class="checkbox" name="Yes" name="Single"></label>
-      <label>DOUBLE<input type="checkbox" class="checkbox" name="Yes"  name="Double"></label>
-      <label>TRIPLE<input type="checkbox" class="checkbox" name="Yes"  name="Triple"></label> 
+      <label>SINGAL<input type="checkbox" class="checkbox" value="Yes" name="Single"></label>
+      <label>DOUBLE<input type="checkbox" class="checkbox" value="Yes"  name="Double"></label>
+      <label>TRIPLE<input type="checkbox" class="checkbox" value="Yes"  name="Triple"></label> 
   </div>
      <div  class="common">
-  <label>BOYS<input type="checkbox" class="checkbox" name="Yes" name="Boys"></label>
-  <label>GIRLS<input type="checkbox" class="checkbox" name="Yes" name="Girls"></label>
+  <label>BOYS<input type="checkbox" class="checkbox" value="Yes" name="Boys"></label>
+  <label>GIRLS<input type="checkbox" class="checkbox" value="Yes" name="Girls"></label>
 </div>
      
       <select class="select-3" name="Price Range" required >
